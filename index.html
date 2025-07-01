@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Constituição da República de Moçambique</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="mozambique-logo.png" alt="Logo de Moçambique" />
+                <h1>Constituição da República de Moçambique</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquisar artigos ou palavras-chave..." />
+                <button id="searchButton">Pesquisar</button>
+            </div>
+        </header>
+
+        <main class="constitution-container">
+            <section id="preamble" class="article-section">
+                <h2>Preâmbulo</h2>
+                <p>Nós, o povo moçambicano...</p>
+            </section>
+
+            <section id="titulo1" class="article-section">
+                <h2>TÍTULO I: Princípios Fundamentais</h2>
+                <article id="artigo1" class="law-article">
+                    <h3>ARTIGO 1</h3>
+                    <p>
+                        A República de Moçambique é um Estado de Direito democrático, baseado na soberania popular, no
+                        pluralismo de expressão, organização e representação política democrática, e no respeito e
+                        garantia dos direitos e liberdades fundamentais do homem.
+                    </p>
+                </article>
+                <article id="artigo2" class="law-article">
+                    <h3>ARTIGO 2</h3>
+                    <p>
+                        A soberania reside no povo, que a exerce através do sufrágio universal, por referendo e pelas
+                        demais formas constitucionalmente previstas.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <button id="openChatBtn" class="chat-toggle-btn">Abrir Assistente Legal</button>
+
+        <aside id="chatContainer" class="chat-sidebar">
+            <div class="chat-header">
+                <h3>Assistente Legal AI</h3>
+                <button id="closeChatBtn" class="close-chat-btn">X</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="bot-message">Olá! Como posso ajudar com a Constituição de Moçambique?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Pergunte sobre a Constituição..." />
+                <button id="sendChatBtn">Enviar</button>
+            </div>
+        </aside>
+
+        <script src="script.js"></script>
+    </body>
+</html>
